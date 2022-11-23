@@ -349,8 +349,8 @@ mkdir /etc/protest
 cat >/root/3proxy/3proxy.cfg <<EOL
 #!/bin/bash
 daemon
-nserver 8.8.8.8
-nserver 195.175.39.49
+nserver 198.153.192.1
+nserver 198.153.194.1
 nscache 65536
 timeouts 1 5 30 60 180 1800 15 60
 log /root/3proxy/3proxy.log
@@ -934,7 +934,7 @@ printf "$bgred $bold İpv6 lokasyon bilgileriniz:$normal\n"
 lskn=$(sed -n '1,5p;41q' /root/3proxy/bilgiler.txt)
 printf "$slm $lskn $normal\n"
 printf "$slm }$normal\n"
-printf "$bold $bgred NOT: genede proxy'e Baglanip test ediniz$normal\n"
+printf "$bold $bgred NOT: Yinede proxy'e Baglanip test ediniz$normal\n"
 if [ $sv231 = "nopro9" ] ; then
 if [[ $tepro = "$adrsv3" ]] ; then
 printf "\n\n$fgred SUCCESS! Proxyleriniz Test Edildi Ve Aktif Gorunuyor - Basarili $normal\n"
