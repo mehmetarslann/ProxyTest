@@ -349,8 +349,8 @@ mkdir /etc/protest
 cat >/root/3proxy/3proxy.cfg <<EOL
 #!/bin/bash
 daemon
-nserver 198.153.192.1
-nserver 198.153.194.1
+nserver 10.1.2.1
+nserver 10.2.2.2
 nscache 65536
 timeouts 1 5 30 60 180 1800 15 60
 log /root/3proxy/3proxy.log
